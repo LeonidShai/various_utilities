@@ -56,10 +56,14 @@ func singletonWorker() {
 	instance2.SetNewTitle("instance_2")
 	instance3.SetNewTitle("instance_3")
 	instance4.SetNewTitle("instance_4")
-	fmt.Printf("Title instance1: %v\n", instance1.Title())
-	fmt.Printf("Title instance2: %v\n", instance2.Title())
-	fmt.Printf("Title instance3: %v\n", instance3.Title())
-	fmt.Printf("Title instance4: %v\n", instance4.Title())
+	title1, _ := instance1.Title()
+	title2, _ := instance2.Title()
+	title3, _ := instance3.Title()
+	title4, _ := instance4.Title()
+	fmt.Printf("Title instance1: %v\n", title1)
+	fmt.Printf("Title instance2: %v\n", title2)
+	fmt.Printf("Title instance3: %v\n", title3)
+	fmt.Printf("Title instance4: %v\n", title4)
 
 	fmt.Println("\n-------------------")
 }
