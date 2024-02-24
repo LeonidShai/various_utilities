@@ -15,4 +15,7 @@ func main() {
 
 	// template Visitor
 	visitorWorker()
+
+	// template Observer
+	observerWorker()
 }

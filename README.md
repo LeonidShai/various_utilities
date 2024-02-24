@@ -12,3 +12,4 @@ Examples:
     - singleton
     - adapter
     - visitor
+    - observer
