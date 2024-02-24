@@ -11,3 +11,4 @@ Examples:
 - go_templates
     - singleton
     - adapter
+    - visitor

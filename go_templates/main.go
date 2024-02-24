@@ -12,4 +12,7 @@ func main() {
 
 	// template Adapter
 	adapterWorker()
+
+	// template Visitor
+	visitorWorker()
 }
