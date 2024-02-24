@@ -18,4 +18,7 @@ func main() {
 
 	// template Observer
 	observerWorker()
+
+	// template Mediator
+	mediatorWorker()
 }
