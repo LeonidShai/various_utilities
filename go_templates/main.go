@@ -4,20 +4,6 @@ import (
 	"fmt"
 )
 
-// type General struct {
-// 	Chislo int
-// }
-
-// func (g *General) ChangeChislo(i int) {
-// 	g.Chislo = i
-// }
-
-// type Concrete struct {
-// 	General
-
-// 	Name string
-// }
-
 func main() {
 	fmt.Println("go templates")
 

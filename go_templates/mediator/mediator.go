@@ -1,15 +1,15 @@
 package mediator
 
 type MediatorIf interface {
-	SendMessage(participant string, msg string)
+	SendMessage(dst string, msg string)
 }
 
 type ConcreteMediator struct {
 	participants map[string]ParticipantIf
 }
 
-func (cm *ConcreteMediator) SendMessage(participant string, msg string) {
-	cm.participants[participant].receive(msg)
+func (cm *ConcreteMediator) SendMessage(dst string, msg string) {
+	cm.participants[dst].receive(msg)
 }
 
 func (cm *ConcreteMediator) RegisterParticipants(participants ...ParticipantIf) {

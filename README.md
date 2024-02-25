@@ -13,3 +13,4 @@ Examples:
     - adapter
     - visitor
     - observer
+    - mediator
