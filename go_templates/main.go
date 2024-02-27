@@ -21,4 +21,7 @@ func main() {
 
 	// template Mediator
 	mediatorWorker()
+
+	// template Facade
+	facadeWorker()
 }

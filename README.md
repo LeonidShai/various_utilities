@@ -14,3 +14,4 @@ Examples:
     - visitor
     - observer
     - mediator
+    - facade
