@@ -24,4 +24,7 @@ func main() {
 
 	// template Facade
 	facadeWorker()
+
+	// template Abstract Factory
+	abstractFactoryWorker()
 }

@@ -15,3 +15,4 @@ Examples:
     - observer
     - mediator
     - facade
+    - abstract factory
