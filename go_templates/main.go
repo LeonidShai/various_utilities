@@ -27,4 +27,7 @@ func main() {
 
 	// template Abstract Factory
 	abstractFactoryWorker()
+
+	// template Factory Method (Factory)
+	factoryMethodWorker()
 }

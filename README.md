@@ -16,3 +16,4 @@ Examples:
     - mediator
     - facade
     - abstract factory
+    - factory method (factory)
