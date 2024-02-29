@@ -17,3 +17,4 @@ Examples:
     - facade
     - abstract factory
     - factory method (factory)
+    - builder

@@ -30,4 +30,7 @@ func main() {
 
 	// template Factory Method (Factory)
 	factoryMethodWorker()
+
+	// template Builder
+	builderWorker()
 }
