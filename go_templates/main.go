@@ -33,4 +33,7 @@ func main() {
 
 	// template Builder
 	builderWorker()
+
+	// template Prototype
+	prototypeWorker()
 }

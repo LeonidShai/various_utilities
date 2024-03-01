@@ -18,3 +18,4 @@ Examples:
     - abstract factory
     - factory method (factory)
     - builder
+    - prototype
