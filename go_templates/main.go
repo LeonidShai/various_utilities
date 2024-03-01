@@ -36,4 +36,7 @@ func main() {
 
 	// template Prototype
 	prototypeWorker()
+
+	// template Decorator
+	decoratorWorker()
 }

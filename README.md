@@ -19,3 +19,4 @@ Examples:
     - factory method (factory)
     - builder
     - prototype
+    - decorator
