@@ -20,3 +20,4 @@ Examples:
     - builder
     - prototype
     - decorator
+    - bridge

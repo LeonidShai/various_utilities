@@ -39,4 +39,7 @@ func main() {
 
 	// template Decorator
 	decoratorWorker()
+
+	// template Bridge
+	bridgeWorker()
 }
