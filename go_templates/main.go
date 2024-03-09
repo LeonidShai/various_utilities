@@ -42,4 +42,7 @@ func main() {
 
 	// template Bridge
 	bridgeWorker()
+
+	// template Composite
+	compositeWorker()
 }

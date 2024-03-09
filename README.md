@@ -21,3 +21,4 @@ Examples:
     - prototype
     - decorator
     - bridge
+    - composite
