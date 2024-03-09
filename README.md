@@ -22,3 +22,4 @@ Examples:
     - decorator
     - bridge
     - composite
+    - memento

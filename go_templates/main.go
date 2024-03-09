@@ -45,4 +45,7 @@ func main() {
 
 	// template Composite
 	compositeWorker()
+
+	// template Memento
+	mementoWorker()
 }
