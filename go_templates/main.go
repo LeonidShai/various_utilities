@@ -48,4 +48,7 @@ func main() {
 
 	// template Memento
 	mementoWorker()
+
+	// template Proxy
+	proxyWorker()
 }
