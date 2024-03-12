@@ -24,3 +24,4 @@ Examples:
     - composite
     - memento
     - proxy
+    - command

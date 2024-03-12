@@ -51,4 +51,7 @@ func main() {
 
 	// template Proxy
 	proxyWorker()
+
+	// template Command
+	commandWorker()
 }
