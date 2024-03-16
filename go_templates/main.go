@@ -54,4 +54,7 @@ func main() {
 
 	// template Command
 	commandWorker()
+
+	// template Template Method
+	templateMethodWorker()
 }

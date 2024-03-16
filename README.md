@@ -25,3 +25,4 @@ Examples:
     - memento
     - proxy
     - command
+    - template method
