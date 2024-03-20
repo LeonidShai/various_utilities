@@ -26,3 +26,4 @@ Examples:
     - proxy
     - command
     - template method
+    - state

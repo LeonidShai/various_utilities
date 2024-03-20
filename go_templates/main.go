@@ -57,4 +57,7 @@ func main() {
 
 	// template Template Method
 	templateMethodWorker()
+
+	// template State
+	stateWorker()
 }
