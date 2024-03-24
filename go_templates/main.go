@@ -60,4 +60,7 @@ func main() {
 
 	// template State
 	stateWorker()
+
+	// template Chain of Responsibility
+	chainOfResponsibilityWorker()
 }

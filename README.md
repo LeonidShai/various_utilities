@@ -27,3 +27,4 @@ Examples:
     - command
     - template method
     - state
+    - chain of responsibility
