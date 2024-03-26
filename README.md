@@ -28,3 +28,4 @@ Examples:
     - template method
     - state
     - chain of responsibility
+    - strategy

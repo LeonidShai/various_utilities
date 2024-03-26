@@ -63,4 +63,7 @@ func main() {
 
 	// template Chain of Responsibility
 	chainOfResponsibilityWorker()
+
+	// template Strategy
+	strategyWorker()
 }
