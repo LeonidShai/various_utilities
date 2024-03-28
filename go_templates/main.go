@@ -66,4 +66,7 @@ func main() {
 
 	// template Strategy
 	strategyWorker()
+
+	// template Iterator
+	iteratorWorker()
 }

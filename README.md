@@ -29,3 +29,4 @@ Examples:
     - state
     - chain of responsibility
     - strategy
+    - iterator
