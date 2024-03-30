@@ -69,4 +69,7 @@ func main() {
 
 	// template Iterator
 	iteratorWorker()
+
+	// template Flyweight
+	flyweightWorker()
 }

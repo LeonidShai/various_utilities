@@ -30,3 +30,4 @@ Examples:
     - chain of responsibility
     - strategy
     - iterator
+    - flyweight
