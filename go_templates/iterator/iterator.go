@@ -23,11 +23,7 @@ type Iterator struct {
 }
 
 func (it *Iterator) HasNext() bool {
-	if it.index < len(it.books) {
-		return true
-	}
-
-	return false
+	return it.index < len(it.books)
 }
 
 func (it *Iterator) Next() *Book {
