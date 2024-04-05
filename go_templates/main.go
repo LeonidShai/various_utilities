@@ -72,4 +72,7 @@ func main() {
 
 	// template Flyweight
 	flyweightWorker()
+
+	// template Interpreter
+	interpreterWorker()
 }

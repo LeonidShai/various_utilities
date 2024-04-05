@@ -31,3 +31,4 @@ Examples:
     - strategy
     - iterator
     - flyweight
+    - interpreter
