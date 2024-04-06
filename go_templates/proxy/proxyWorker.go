@@ -1,14 +1,13 @@
-package main
+package proxy
 
 import (
 	"fmt"
-	"go_templates/proxy"
 )
 
-func proxyWorker() {
+func ProxyWorker() {
 	fmt.Println("---------- Proxy -----------")
 
-	warechouse := proxy.ProxyWarehouse{}
+	warechouse := ProxyWarehouse{}
 	if res, ok := warechouse.GetData(1); ok {
 		fmt.Println(res)
 	}

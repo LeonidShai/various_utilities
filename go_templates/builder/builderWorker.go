@@ -1,24 +1,23 @@
-package main
+package builder
 
 import (
 	"fmt"
-	"go_templates/builder"
 )
 
-func builderWorker() {
+func BuilderWorker() {
 	fmt.Println("---------- Builder-----------")
 
-	chairBuilder := builder.NewChairBuilder()
+	chairBuilder := NewChairBuilder()
 	chair := chairBuilder.ChairLegs(3).ChairBack("blue").Sitting("metal").Build()
 	fmt.Println(chair)
 
-	offChB := builder.NewOfficeChairBuilder()
+	offChB := NewOfficeChairBuilder()
 	offChB.ChairBack("grey")
-	director := builder.NewDirector(offChB)
+	director := NewDirector(offChB)
 	offCh := director.BuildChair()
 	fmt.Println(offCh)
 
-	homeChB := builder.NewHomeChairBuilder()
+	homeChB := NewHomeChairBuilder()
 	homeChB.ChairLegs(0)
 	director.SetBuilder(homeChB)
 	fmt.Println(director.BuildChair())

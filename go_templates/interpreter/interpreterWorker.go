@@ -1,11 +1,10 @@
-package main
+package interpreter
 
 import (
 	"fmt"
-	"go_templates/interpreter"
 )
 
-func interpreterWorker() {
+func InterpreterWorker() {
 	fmt.Println("---------- Iterpreter -----------")
 	const (
 		expr1 = "2 + 3 - 4 + 2"
@@ -14,7 +13,7 @@ func interpreterWorker() {
 	)
 
 	// простой калькулятор
-	parser := interpreter.NewParser()
+	parser := NewParser()
 	parser.Parse(expr1)
 	res := parser.Result()
 	fmt.Printf("%s = %d\n", expr1, res)

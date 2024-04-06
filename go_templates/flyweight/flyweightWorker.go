@@ -1,11 +1,10 @@
-package main
+package flyweight
 
 import (
 	"fmt"
-	"go_templates/flyweight"
 )
 
-func flyweightWorker() {
+func FlyweightWorker() {
 	fmt.Println("---------- Flyweight -----------")
 	const (
 		home   = "home"
@@ -16,12 +15,12 @@ func flyweightWorker() {
 		blue  = "blue"
 	)
 	// создадим объекты (3 штуки платьев)
-	homeBlack := flyweight.NewHomeDress(black)
-	streetGreen := flyweight.NewStreetDress(green)
-	streetBlue := flyweight.NewStreetDress(blue)
+	homeBlack := NewHomeDress(black)
+	streetGreen := NewStreetDress(green)
+	streetBlue := NewStreetDress(blue)
 
 	// теперь создадим Фабрику наших платьев (хранилище)
-	dressCloset := flyweight.NewDressClosetFactory(&homeBlack, &streetGreen, &streetBlue)
+	dressCloset := NewDressClosetFactory(&homeBlack, &streetGreen, &streetBlue)
 
 	// а теперь можем передавать нашу фабрику и использоватье её везде
 	// тут в примере передавать не будем, будем просто использовать

@@ -1,17 +1,16 @@
-package main
+package factorymethod
 
 import (
 	"fmt"
-	factorymethod "go_templates/factory_method"
 )
 
-func factoryMethodWorker() {
+func FactoryMethodWorker() {
 	fmt.Println("---------- Factory Method -----------")
 
 	foodTypes := []string{"fruits", "streat", "lunch", "dessert"}
 
 	for _, ft := range foodTypes {
-		food := factorymethod.GetFood(ft)
+		food := GetFood(ft)
 		fmt.Println(food.GetFoodName())
 		food.PrintPeculiarities()
 		fmt.Println()

@@ -1,21 +1,20 @@
-package main
+package command
 
 import (
 	"fmt"
-	"go_templates/command"
 )
 
-func commandWorker() {
+func CommandWorker() {
 	fmt.Println("---------- Command -----------")
 
 	// создаем получателя (Receiver)
-	lighter := command.NewDeviceTurnLight()
+	lighter := NewDeviceTurnLight()
 	// создаем объект Command и передаем наш девайс (Receiver)
-	comm := &command.Presser{
+	comm := &Presser{
 		Device: lighter,
 	}
 	// создаем объект, который управляет включение/выключение (т.е. командой)
-	invoker := &command.OnOffLight{
+	invoker := &OnOffLight{
 		Command: comm,
 	}
 

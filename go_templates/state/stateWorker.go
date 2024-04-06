@@ -1,13 +1,12 @@
-package main
+package state
 
 import (
 	"fmt"
-	"go_templates/state"
 )
 
-func stateWorker() {
+func StateWorker() {
 	fmt.Println("---------- State -----------")
-	machine := state.NewMachine()
+	machine := NewMachine()
 	machine.StartMotion()
 	machine.SwitchTransmission(1)
 	machine.Gaz(7)

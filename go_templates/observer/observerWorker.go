@@ -1,18 +1,17 @@
-package main
+package observer
 
 import (
 	"fmt"
-	"go_templates/observer"
 )
 
-func observerWorker() {
+func ObserverWorker() {
 	fmt.Println("---------- Observer -----------")
-	stater := observer.NewStater()
+	stater := NewStater()
 
-	vasya := &observer.ConcreteObserver{
+	vasya := &ConcreteObserver{
 		Name: "Vasya",
 	}
-	petya := &observer.ConcreteObserver{
+	petya := &ConcreteObserver{
 		Name: "Petya",
 	}
 

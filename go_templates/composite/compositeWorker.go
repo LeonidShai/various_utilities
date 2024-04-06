@@ -1,21 +1,20 @@
-package main
+package composite
 
 import (
 	"fmt"
-	"go_templates/composite"
 )
 
-func compositeWorker() {
+func CompositeWorker() {
 	fmt.Println("---------- Composite -----------")
 
 	// Создадим структуру папок с файлами
-	folder1 := composite.NewFolder("Documents")
-	file1 := composite.NewFile("book.txt")
-	file2 := composite.NewFile("doc.txt")
+	folder1 := NewFolder("Documents")
+	file1 := NewFile("book.txt")
+	file2 := NewFile("doc.txt")
 	folder1.AddComponents(file1, file2)
 
-	folder2 := composite.NewFolder("home")
-	file3 := composite.NewFile("test.txt")
+	folder2 := NewFolder("home")
+	file3 := NewFile("test.txt")
 	folder2.AddComponents(file3, folder1)
 
 	// вызовем поиск по папкам и файлам

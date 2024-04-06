@@ -1,22 +1,21 @@
-package main
+package mediator
 
 import (
 	"fmt"
-	mediator "go_templates/mediator"
 )
 
-func mediatorWorker() {
+func MediatorWorker() {
 	fmt.Println("---------- Mediator -----------")
-	md := &mediator.ConcreteMediator{}
-	participant1 := mediator.Participant1{
-		Participant: mediator.Participant{
+	md := &ConcreteMediator{}
+	participant1 := Participant1{
+		Participant: Participant{
 			Mediator: md,
 			Name:     "Participant1",
 		},
 		Id: 0,
 	}
-	participant2 := mediator.Participant2{
-		Participant: mediator.Participant{
+	participant2 := Participant2{
+		Participant: Participant{
 			Mediator: md,
 			Name:     "Participant2",
 		},

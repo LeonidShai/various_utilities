@@ -1,8 +1,7 @@
-package main
+package facade
 
 import (
 	"fmt"
-	facade "go_templates/facade"
 )
 
 type GetUpIf interface {
@@ -13,10 +12,10 @@ func tryingToGetUpPersonByLift(fc GetUpIf) bool {
 	return fc.GetUpPersonByLift()
 }
 
-func facadeWorker() {
+func FacadeWorker() {
 	fmt.Println("----------Facade -----------")
 
-	fc := facade.NewFacade()
+	fc := NewFacade()
 	if tryingToGetUpPersonByLift(fc) {
 		fmt.Printf("This is success. Lift can get up %v\n", fc.PersonName())
 	} else {

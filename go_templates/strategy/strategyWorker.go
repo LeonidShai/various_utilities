@@ -1,23 +1,22 @@
-package main
+package strategy
 
 import (
 	"fmt"
-	"go_templates/strategy"
 )
 
-func strategyWorker() {
+func StrategyWorker() {
 	fmt.Println("---------- Strategy -----------")
 	// создадим наш класс-клиент-исполнитель
-	ourStrategy := strategy.WhatDo{}
+	ourStrategy := WhatDo{}
 
 	// можем создать сначала одну стратегию
-	sitting := strategy.ChairSitting{}
+	sitting := ChairSitting{}
 	// и использовать ее
 	ourStrategy.SetNewStrategy(&sitting)
 	ourStrategy.ExecuteOurStrategy()
 
 	// а теперь можем создать (тут и/или) другую стратегию
-	eatting := strategy.EatSoup{}
+	eatting := EatSoup{}
 
 	// и использовать уже ее
 	ourStrategy.SetNewStrategy(&eatting)

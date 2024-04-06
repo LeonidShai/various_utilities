@@ -1,13 +1,12 @@
-package main
+package prototype
 
 import (
 	"fmt"
-	"go_templates/prototype"
 )
 
-func prototypeWorker() {
+func PrototypeWorker() {
 	fmt.Println("---------- Prototype -----------")
-	item1 := prototype.NewItem("buratino")
+	item1 := NewItem("buratino")
 	item2 := item1.Clone()
 	fmt.Printf("Item_1 name: %v and Item_2 name: %v\n", item1.GetName(), item2.GetName())
 	fmt.Println("-------------------")

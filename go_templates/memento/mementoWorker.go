@@ -1,15 +1,14 @@
-package main
+package memento
 
 import (
 	"fmt"
-	"go_templates/memento"
 )
 
-func mementoWorker() {
+func MementoWorker() {
 	fmt.Println("---------- Memento -----------")
 	// Создадим оригинальный объект
-	orig := memento.NewOriginal()
-	origCaretaker := memento.NewCaretaker()
+	orig := NewOriginal()
+	origCaretaker := NewCaretaker()
 	// Сохраним и будем изменять и сохранять оригинальный объект
 	origCaretaker.AddMemento(orig.Save())
 

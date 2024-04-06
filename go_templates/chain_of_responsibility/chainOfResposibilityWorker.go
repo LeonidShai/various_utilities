@@ -1,25 +1,24 @@
-package main
+package chainofresponsibility
 
 import (
 	"fmt"
-	chainofresponsibility "go_templates/chain_of_responsibility"
 )
 
-func chainOfResponsibilityWorker() {
+func ChainOfResponsibilityWorker() {
 	fmt.Println("---------- Chain of Responsibility -----------")
 	// будем варить суп =))
-	soup := &chainofresponsibility.Soup{}
+	soup := &Soup{}
 
 	// заведем процессор для варки супа =))
-	cookSoup := chainofresponsibility.CookSoupProcessor{}
+	cookSoup := CookSoupProcessor{}
 
 	// заведем объекты-действия для варки супа
-	pourWater := &chainofresponsibility.PourWaterPanProcess{}
-	peelVegetables := &chainofresponsibility.PeelVegetablesProcess{}
-	putVegetablesPan := &chainofresponsibility.PutVegetablesPanProcess{}
-	putSeasoning := &chainofresponsibility.PutSeasoningProcess{}
-	boil := &chainofresponsibility.BoilProcess{}
-	eat := &chainofresponsibility.EatProcess{}
+	pourWater := &PourWaterPanProcess{}
+	peelVegetables := &PeelVegetablesProcess{}
+	putVegetablesPan := &PutVegetablesPanProcess{}
+	putSeasoning := &PutSeasoningProcess{}
+	boil := &BoilProcess{}
+	eat := &EatProcess{}
 
 	// расставим последовательность действий
 	cookSoup.SetNextHandler(pourWater)

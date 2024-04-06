@@ -1,20 +1,19 @@
-package main
+package singleton
 
 import (
 	"fmt"
-	singleton "go_templates/singleton"
 )
 
-func singletonWorker() {
+func SingletonWorker() {
 	fmt.Println("---------- Singleton -----------")
 	name := "First"
 	fmt.Printf("%v singleton creation\n", name)
-	instance1 := singleton.GetSingletonInstance(name)
+	instance1 := GetSingletonInstance(name)
 	fmt.Println(instance1.Title())
 
 	name = "Second"
 	fmt.Printf("\n%v singleton creation\n", name)
-	instance2 := singleton.GetSingletonInstance(name)
+	instance2 := GetSingletonInstance(name)
 	fmt.Println(instance2.Title())
 
 	if instance1 == instance2 {

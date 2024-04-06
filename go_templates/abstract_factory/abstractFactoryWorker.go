@@ -1,15 +1,14 @@
-package main
+package abstractfactory
 
 import (
 	"fmt"
-	abstractfactory "go_templates/abstract_factory"
 )
 
-func abstractFactoryWorker() {
+func AbstractFactoryWorker() {
 	fmt.Println("---------- Abstract Factory -----------")
 
-	officeFactory := abstractfactory.GetFactory("office")
-	homeFactory := abstractfactory.GetFactory("home")
+	officeFactory := GetFactory("office")
+	homeFactory := GetFactory("home")
 
 	officeApple := officeFactory.GetFruit("apple")
 	officeChair := officeFactory.GetItem("chair")

@@ -1,21 +1,20 @@
-package main
+package templatemethod
 
 import (
 	"fmt"
-	templatemethod "go_templates/template_method"
 )
 
-func templateMethodWorker() {
+func TemplateMethodWorker() {
 	fmt.Println("---------- Template Method -----------")
 	// 2 разных варианта использования
 	// 1 вариант: (создаем wayToWork с конкретным объектом внутри
 	// и у него вызываем метод process)
-	vasya := &templatemethod.Vasya{}
-	fedya := &templatemethod.Fedya{}
-	vasyaWayToWork := &templatemethod.WayToWork{
+	vasya := &Vasya{}
+	fedya := &Fedya{}
+	vasyaWayToWork := &WayToWork{
 		Wtw: vasya,
 	}
-	fedyaWayToWork := &templatemethod.WayToWork{
+	fedyaWayToWork := &WayToWork{
 		Wtw: fedya,
 	}
 	vasyaWayToWork.ProcessWayToWork()
@@ -26,12 +25,12 @@ func templateMethodWorker() {
 	// 2 вариант: (создаем конкретный объект, у которых внутри определяем wayToWork,
 	// внутри которого помещаем этот конкретный объект.
 	// И у конкретного объекта вызываем process)
-	petya := &templatemethod.Petya{}
-	dasha := &templatemethod.Dasha{}
-	petya.WayToWork = templatemethod.WayToWork{
+	petya := &Petya{}
+	dasha := &Dasha{}
+	petya.WayToWork = WayToWork{
 		Wtw: petya,
 	}
-	dasha.WayToWork = templatemethod.WayToWork{
+	dasha.WayToWork = WayToWork{
 		Wtw: dasha,
 	}
 	petya.ProcessWayToWork()

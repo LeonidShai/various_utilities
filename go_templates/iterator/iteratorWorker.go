@@ -1,27 +1,26 @@
-package main
+package iterator
 
 import (
 	"fmt"
-	"go_templates/iterator"
 )
 
-func iteratorWorker() {
+func IteratorWorker() {
 	fmt.Println("---------- Iterator -----------")
 
 	// создаем объекты, по которым будем итерироваться
-	book1 := &iterator.Book{
+	book1 := &Book{
 		Name:   "War and Piece",
 		Author: "Tolstoy",
 	}
 
-	book2 := &iterator.Book{
+	book2 := &Book{
 		Name:   "Dubrovskii",
 		Author: "Pushkin",
 	}
 
 	// создаем коллекцию
-	booksCollection := iterator.Collection{
-		Books: []*iterator.Book{book1, book2},
+	booksCollection := Collection{
+		Books: []*Book{book1, book2},
 	}
 
 	// создаем итератор

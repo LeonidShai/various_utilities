@@ -2,77 +2,101 @@ package main
 
 import (
 	"fmt"
+
+	abstractfactory "go_templates/abstract_factory"
+	adapter "go_templates/adapter"
+	bridge "go_templates/bridge"
+	builder "go_templates/builder"
+	chainofresponsibility "go_templates/chain_of_responsibility"
+	command "go_templates/command"
+	composite "go_templates/composite"
+	decorator "go_templates/decorator"
+	facade "go_templates/facade"
+	factorymethod "go_templates/factory_method"
+	flyweight "go_templates/flyweight"
+	interpreter "go_templates/interpreter"
+	iterator "go_templates/iterator"
+	mediator "go_templates/mediator"
+	memento "go_templates/memento"
+	observer "go_templates/observer"
+	prototype "go_templates/prototype"
+	proxy "go_templates/proxy"
+	singleton "go_templates/singleton"
+	state "go_templates/state"
+	strategy "go_templates/strategy"
+	templatemethod "go_templates/template_method"
+	visitor "go_templates/visitor"
 )
 
 func main() {
 	fmt.Println("go templates")
 
 	// template Singleton
-	singletonWorker()
+	singleton.SingletonWorker()
 
 	// template Adapter
-	adapterWorker()
+	adapter.AdapterWorker()
 
 	// template Visitor
-	visitorWorker()
+	visitor.VisitorWorker()
 
 	// template Observer
-	observerWorker()
+	observer.ObserverWorker()
 
 	// template Mediator
-	mediatorWorker()
+	mediator.MediatorWorker()
 
 	// template Facade
-	facadeWorker()
+	facade.FacadeWorker()
 
 	// template Abstract Factory
-	abstractFactoryWorker()
+	abstractfactory.AbstractFactoryWorker()
 
 	// template Factory Method (Factory)
-	factoryMethodWorker()
+	factorymethod.FactoryMethodWorker()
 
 	// template Builder
-	builderWorker()
+	builder.BuilderWorker()
 
 	// template Prototype
-	prototypeWorker()
+	prototype.PrototypeWorker()
 
 	// template Decorator
-	decoratorWorker()
+	decorator.DecoratorWorker()
 
 	// template Bridge
-	bridgeWorker()
+	bridge.BridgeWorker()
 
 	// template Composite
-	compositeWorker()
+	composite.CompositeWorker()
 
 	// template Memento
-	mementoWorker()
+	memento.MementoWorker()
 
 	// template Proxy
-	proxyWorker()
+	proxy.ProxyWorker()
 
 	// template Command
-	commandWorker()
+	command.CommandWorker()
 
 	// template Template Method
-	templateMethodWorker()
+	templatemethod.TemplateMethodWorker()
 
 	// template State
-	stateWorker()
+	state.StateWorker()
 
 	// template Chain of Responsibility
-	chainOfResponsibilityWorker()
+	chainofresponsibility.ChainOfResponsibilityWorker()
 
 	// template Strategy
-	strategyWorker()
+	strategy.StrategyWorker()
 
 	// template Iterator
-	iteratorWorker()
+	iterator.IteratorWorker()
 
 	// template Flyweight
-	flyweightWorker()
+	flyweight.FlyweightWorker()
 
 	// template Interpreter
-	interpreterWorker()
+	interpreter.InterpreterWorker()
 }
