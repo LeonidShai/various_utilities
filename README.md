@@ -32,3 +32,5 @@ Examples:
     - iterator
     - flyweight
     - interpreter
+- concurrency_parallelism
+    - simple example
