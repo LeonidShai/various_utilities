@@ -1,0 +1,15 @@
+set number
+set expandtab
+set tabstop=4
+set smarttab
+set softtabstop=4
+set shiftwidth=4
+set foldcolumn=2
+set smartindent
+syntax on
+set ignorecase
+set smartcase
+set hlsearch
+set listchars=tab:\|\-,trail:~,extends:>,precedes:<,space:·
+set list
+set encoding=utf8
