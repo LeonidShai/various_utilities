@@ -181,3 +181,54 @@ for _, f := range funcs {
 
 // counter = 5 (так все 5 раз)
 ```
+
+### вопросы на почему?
+// --- 1 Что выведет и почему? ---
+```
+type Apple struct {
+    Price int
+}
+ 
+func main() {
+    apple := Apple{Price: 50}
+    newApple := apple
+    newApple.Price++
+    fmt.Println(apple)
+}
+```
+
+// --- 2 Что выведет и почему? ----
+```
+type Fruit interface {
+}
+ 
+type Apple struct {
+}
+ 
+func NewApple() *Apple {
+    return nil
+}
+ 
+func main() {
+    var fruit Fruit = NewApple()
+    if fruit == nil {
+        fmt.Println("It's nil")
+    } else {
+        fmt.Println("It's not nil")
+    }
+}
+```
+
+// --- 4 В какой области памяти окажется u ? ---
+```
+func createUser() *user {
+     u := user{
+        name:  "Bill",
+     }
+
+     return &u
+}
+```
+
+### Что такое AST-дерево?
+https://ru.hexlet.io/courses/algorithms-trees/lessons/astree/theory_unit

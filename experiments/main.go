@@ -31,7 +31,16 @@ func experimentSliceWithNil() {
 	}
 }
 
+func experimentWithSlices() {
+	list := make([]int, 0, 2)
+	fmt.Println(list)
+	if len(list) != 0 {
+		fmt.Println("List isn't equal 0")
+	}
+}
+
 func main() {
 	// experimentInvalidMemoryAddress()
-	experimentSliceWithNil()
+	// experimentSliceWithNil()
+	experimentWithSlices()
 }
