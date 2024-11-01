@@ -39,8 +39,16 @@ func experimentWithSlices() {
 	}
 }
 
+func experimentCloseOfClosedChannel() {
+	ch := make(chan struct{})
+
+	close(ch)
+	close(ch) // panic: close of closed channel
+}
+
 func main() {
 	// experimentInvalidMemoryAddress()
 	// experimentSliceWithNil()
+	// experimentCloseOfClosedChannel()
 	experimentWithSlices()
 }
