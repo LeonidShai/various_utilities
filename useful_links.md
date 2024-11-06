@@ -14,3 +14,7 @@ https://habr.com/ru/articles/658623/ -- interview
 
 ## Docker
 https://habr.com/ru/companies/slurm/articles/528206/
+
+## Database
+https://habr.com/ru/companies/otus/articles/461067/
+https://habr.com/ru/articles/790850/
