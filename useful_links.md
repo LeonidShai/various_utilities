@@ -14,7 +14,19 @@ https://habr.com/ru/articles/658623/ -- interview
 
 ## Docker
 https://habr.com/ru/companies/slurm/articles/528206/
+https://habr.com/ru/articles/659049/ -- механизм изоляции
 
 ## Database
 https://habr.com/ru/companies/otus/articles/461067/
 https://habr.com/ru/articles/790850/
+
+## C/C++
+https://github.com/Jollu8/C-INTERVIEW-QUESTIONS/tree/main
+https://otus.ru/nest/post/186/ -- memory
+
+## data structure
+https://habr.com/ru/articles/112222/ -- куча
+https://habr.com/ru/articles/489494/ -- структуры данных
+
+
+## algorithms
