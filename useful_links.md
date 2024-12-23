@@ -14,7 +14,8 @@ https://habr.com/ru/articles/658623/ -- interview
 
 ## Docker
 https://habr.com/ru/companies/slurm/articles/528206/
-https://habr.com/ru/articles/659049/ -- механизм изоляции
+https://habr.com/ru/articles/659049/ -- механизм изоляции докера
+https://timeweb.cloud/blog/virtualizaciya-i-kontejnerizaciya-raznica -- виртуализация и контейнеризация
 
 ## Database
 https://habr.com/ru/companies/otus/articles/461067/
