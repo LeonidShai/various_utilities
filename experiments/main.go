@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	yamlparser "experiments/yaml_parser"
+)
 
 type common struct {
 	pparam *uint32
@@ -50,5 +54,8 @@ func main() {
 	// experimentInvalidMemoryAddress()
 	// experimentSliceWithNil()
 	// experimentCloseOfClosedChannel()
-	experimentWithSlices()
+	// experimentWithSlices()
+
+	// Experiments with parsing yaml file (test.yaml)
+	yamlparser.ParseYamlFile(yamlparser.TestFileName)
 }
