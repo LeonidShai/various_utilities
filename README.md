@@ -2,6 +2,9 @@
 List:
 - useful_bashs/srename.sh
 
+Interview:
+- interview.md
+
 Examples:
 ```
 ./srename.sh def_file1.txt fuf_file.log
