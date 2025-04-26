@@ -11,4 +11,5 @@ func main() {
 
 	// Stack
 	stack.StackWorker()
+	stack.Stack2Worker()
 }
