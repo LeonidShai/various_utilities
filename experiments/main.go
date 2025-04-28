@@ -3,7 +3,8 @@ package main
 import (
 	"fmt"
 
-	yamlparser "experiments/yaml_parser"
+	getid "experiments/get_id"
+	// yamlparser "experiments/yaml_parser"
 )
 
 type common struct {
@@ -57,5 +58,8 @@ func main() {
 	// experimentWithSlices()
 
 	// Experiments with parsing yaml file (test.yaml)
-	yamlparser.ParseYamlFile(yamlparser.TestFileName)
+	// yamlparser.ParseYamlFile(yamlparser.TestFileName)
+
+	// GetID
+	getid.GetIdWorker()
 }
