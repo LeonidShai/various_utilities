@@ -19,6 +19,10 @@ type stack struct {
 // Create stack with capacity.
 // If capacity = 0, stack will have a capacity of 10.
 func NewStack(capacity int) stack {
+	if capacity == 0 {
+		capacity = defaultCapacity
+	}
+
 	return stack{
 		size:     0,
 		capacity: capacity,
