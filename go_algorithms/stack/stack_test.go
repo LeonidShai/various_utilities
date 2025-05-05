@@ -1,7 +1,6 @@
 package stack
 
 import (
-	"fmt"
 	"testing"
 
 	assert "github.com/stretchr/testify/assert"
@@ -9,7 +8,7 @@ import (
 
 const testStackCapacity = 4
 
-func Test_MainApi(t *testing.T) {
+func TestMainApi(t *testing.T) {
 	type tests struct {
 		name   string
 		verify func(*testing.T, *stack)
@@ -40,10 +39,48 @@ func Test_MainApi(t *testing.T) {
 
 	testStack := NewStack(testStackCapacity)
 	for _, test := range checkers {
-		fmt.Printf("== Test: %s\n", test.name)
-		test.verify(t, &testStack)
-		fmt.Println("== Success end of test")
-		fmt.Println()
+		// fmt.Printf("== Test: %s\n", test.name)
+		// test.verify(t, &testStack)
+		// fmt.Println("== Success end of test")
+		// fmt.Println()
+		t.Run(test.name, func(t *testing.T) {
+			test.verify(t, &testStack)
+		})
+	}
+}
+
+func BenchmarkMainApi(b *testing.B) {
+	var testCapacity int = 10000
+	type benchs struct {
+		name  string
+		bench func(*testing.B, *stack)
+	}
+
+	benchers := []benchs{
+		{
+			name:  "push elem",
+			bench: benchPushElem,
+		},
+	}
+
+	testStack := NewStack(testCapacity)
+	for _, test := range benchers {
+		// b.ResetTimer()
+		b.Run(test.name, func(b *testing.B) {
+			test.bench(b, &testStack)
+		})
+	}
+}
+
+func benchPushElem(b *testing.B, testStack *stack) {
+	var testElem int = 1
+	for i := 0; i < b.N; i++ {
+		b.StopTimer()
+		if i%testStack.capacity == 0 {
+			testStack.Clear()
+		}
+		b.StartTimer()
+		_ = testStack.Push(testElem)
 	}
 }
 
