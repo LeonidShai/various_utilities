@@ -11,6 +11,8 @@ https://itsecforu.ru/2020/01/24/%F0%9F%90%A7-50-osnovnyh-voprosov-na-sobesedovan
 ## GOLANG
 https://habr.com/ru/companies/productivity_inside/articles/505430/ -- solid
 https://habr.com/ru/articles/658623/ -- interview
+https://habr.com/ru/articles/654569/ -- first
+https://habr.com/ru/articles/670974/ -- second
 
 ## Docker
 https://habr.com/ru/companies/slurm/articles/528206/
