@@ -2,8 +2,7 @@ package main
 
 import (
 	"fmt"
-
-	getid "experiments/get_id"
+	// getid "experiments/get_id"
 	// yamlparser "experiments/yaml_parser"
 )
 
@@ -61,5 +60,5 @@ func main() {
 	// yamlparser.ParseYamlFile(yamlparser.TestFileName)
 
 	// GetID
-	getid.GetIdWorker()
+	// getid.GetIdWorker()
 }
