@@ -61,4 +61,5 @@ func main() {
 
 	// GetID
 	// getid.GetIdWorker()
+	fmt.Println("end of main")
 }
