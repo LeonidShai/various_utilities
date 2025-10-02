@@ -1,6 +1,7 @@
 package main
 
 import (
+	"errors"
 	"fmt"
 	// getid "experiments/get_id"
 	// yamlparser "experiments/yaml_parser"
@@ -50,6 +51,21 @@ func experimentCloseOfClosedChannel() {
 	close(ch) // panic: close of closed channel
 }
 
+func expDeferWithIf() {
+	var err error
+	var a int = 5
+	defer func() {
+		if err != nil {
+			fmt.Printf("we have error: %v\n", a)
+		} else {
+			fmt.Printf("we don't have error: %v. Uhhu!!!\n", a)
+		}
+	}()
+
+	a = 2 + 3
+	err = errors.New("first error")
+}
+
 func main() {
 	// experimentInvalidMemoryAddress()
 	// experimentSliceWithNil()
@@ -61,5 +77,6 @@ func main() {
 
 	// GetID
 	// getid.GetIdWorker()
+	expDeferWithIf()
 	fmt.Println("end of main")
 }
