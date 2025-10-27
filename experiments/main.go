@@ -2,6 +2,7 @@ package main
 
 import (
 	"errors"
+	yamlparser "experiments/yaml_parser"
 	"fmt"
 	// getid "experiments/get_id"
 	// yamlparser "experiments/yaml_parser"
@@ -74,9 +75,10 @@ func main() {
 
 	// Experiments with parsing yaml file (test.yaml)
 	// yamlparser.ParseYamlFile(yamlparser.TestFileName)
+	yamlparser.ConvertJsonToYaml()
 
 	// GetID
 	// getid.GetIdWorker()
-	expDeferWithIf()
+	// expDeferWithIf()
 	fmt.Println("end of main")
 }
