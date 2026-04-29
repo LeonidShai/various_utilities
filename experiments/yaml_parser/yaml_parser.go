@@ -1,6 +1,7 @@
 package yamlparser
 
 import (
+	"bytes"
 	"encoding/json"
 	"fmt"
 	"os"
@@ -10,7 +11,7 @@ import (
 
 var (
 	TestFileName = "yaml_parser/test.yaml"
-	testJsonStr  = `{"humans":{"name":"Petya","age":30,"city":"Moscow"},"plemya":"indeec"}`
+	testJsonStr  = `{"humans":{"name":"Petya","age":30,"parents":[{"mom":"Alex"},{"dad":"Gordon","city":"Moscow"}],"plemya":"indeec"}}`
 )
 
 func ParseYamlFile(filename string) {
@@ -47,14 +48,44 @@ func ConvertJsonToYaml() {
 		return
 	}
 
+	dt, ok := data["humans"]
+	if ok {
+		fmt.Println("Found humans")
+	} else {
+		fmt.Println("Failed to find humans")
+	}
+
+	_, ok = data["plemya"]
+	if ok {
+		fmt.Println("Found plemya")
+	} else {
+		fmt.Println("Failed to find plemya")
+	}
+
 	// Кодируем map в YAML
-	yamlBytes, err := yaml.Marshal(&data)
-	if err != nil {
-		fmt.Printf("failed to convert to YAML: %v", err)
+	// yamlBytes, err := yaml.Marshal(&dt)
+	// if err != nil {
+	// 	fmt.Printf("failed to convert to YAML: %v", err)
+
+	// 	return
+	// }
+
+	var buf bytes.Buffer
+	encoder := yaml.NewEncoder(&buf)
+	encoder.SetIndent(2)
+
+	if err := encoder.Encode(dt); err != nil {
+		fmt.Printf("failed to decode: %v", err)
+
+		return
+	}
+
+	if err := encoder.Close(); err != nil {
+		fmt.Printf("failed to close: %v", err)
 
 		return
 	}
 
 	// Выводим результат
-	fmt.Println(string(yamlBytes))
+	fmt.Println(buf.String())
 }
